@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfc;
+  padding: 100px 150px;
+  font-family: "Roboto", sans-serif;
+}
+
+#main {
+  min-height: 100vh;
+}
+
+#about-me {
+  display: flex;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #bbbbbb;
+}
+
+#about-me p {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 50%;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.intro p {
+  color: #454444;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  /* border: 1px solid blue; */
+  font-family: "Roboto", sans-serif;
+}
+
+.top-nav-links a {
+  color: #7c7c7c;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.top-nav-links a:hover {
+  color: #242424;
+  cursor: pointer;
+}
+
+h1 {
+  color: #242424;
+  font-size: 4rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.56rem;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+#project-container {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+  justify-items: center;
+}
+
+.project {
+  width: 350px;
+  height: 350px;
+  background-color: #eeeeee;
+}
+
+footer {
+  text-align: center;
+}
