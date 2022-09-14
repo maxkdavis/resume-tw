@@ -23,7 +23,11 @@ body {
 #about-me p {
   font-size: 16px;
   line-height: 1.5;
-  width: 50%;
+  width: 55%;
+}
+
+#resume {
+  text-align: center;
 }
 
 .top-nav {
@@ -85,6 +89,37 @@ h2 {
   width: 350px;
   height: 350px;
   background-color: #eeeeee;
+}
+
+.current-tab {
+  border-bottom: 1px solid hsla(183, 87%, 15%, 1);
+}
+
+.resume-btn {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+button.button-large {
+  background-color: #bbb;
+  border: none;
+  border-radius: 64px;
+  padding: 15px;
+}
+
+button.button-large a {
+  font-family: "IBM Plex Mono", monospace;
+  color: #242424;
+  font-weight: 600;
+  font-size: 1.25rem;
+  /*adding padding to the anchor, not the button, to increase clickable area*/
+  padding: 30px;
+  text-decoration: none;
+}
+
+button.button-large:hover {
+  background-color: #a6a6a6;
 }
 
 footer {
