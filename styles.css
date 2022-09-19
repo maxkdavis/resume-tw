@@ -20,16 +20,26 @@ body {
   border-bottom: 2px solid #bbbbbb;
 }
 
-#about-me p {
+#about-me p,
+.project-information p {
   font-size: 16px;
   line-height: 1.5;
   width: 55%;
 }
 
-#resume {
+.project-information {
+  margin: 50px 0px;
+}
+
+#resume,
+#project-main {
   text-align: center;
 }
 
+.project-image-container img {
+  max-width: 800px;
+  border: 1px solid rgb(225, 223, 223);
+}
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -48,7 +58,6 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 200px;
-  /* border: 1px solid blue; */
   font-family: "Roboto", sans-serif;
 }
 
@@ -57,6 +66,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   text-decoration: none;
+  padding-bottom: 5px;
 }
 
 .top-nav-links a:hover {
@@ -73,11 +83,10 @@ h1 {
 
 h2 {
   font-size: 1.56rem;
-  width: 200px;
   margin-bottom: 20px;
 }
 
-#project-container {
+#project-container-gallery {
   margin: 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -85,10 +94,35 @@ h2 {
   justify-items: center;
 }
 
-.project {
+.project-card {
   width: 350px;
   height: 350px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.gallery-card-image {
+  width: 100%;
+  height: 300px;
   background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-card-image img {
+  width: 75%;
+  height: auto;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
+
+.gallery-card-image:hover {
+  background-color: #a6a6a6;
+  transition: 0.3s ease-in-out;
+}
+
+.project-card h4 {
+  margin: 8px 0px 5px;
 }
 
 .current-tab {
@@ -123,5 +157,6 @@ button.button-large:hover {
 }
 
 footer {
+  margin-top: 100px;
   text-align: center;
 }
