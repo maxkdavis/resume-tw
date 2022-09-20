@@ -167,6 +167,9 @@ footer {
 
 /****************************** MOBILE LAYOUT ************************/
 @media (max-width: 760px) {
+  body {
+    padding: 10px;
+  }
   .top-nav {
     display: flex;
     flex-direction: column;
