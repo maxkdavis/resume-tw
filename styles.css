@@ -164,3 +164,45 @@ footer {
   margin-top: 100px;
   text-align: center;
 }
+
+/****************************** MOBILE LAYOUT ************************/
+@media (max-width: 760px) {
+  .top-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .top-nav-links {
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  #about-me p,
+  #project-container p {
+    width: 100%;
+  }
+
+  #project-container-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  /* Project Pages */
+  #project-main .project-image-container {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  #project-main .project-image-container img {
+    width: 100%;
+  }
+  /*Resume Page */
+  #resume .image-container {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  #resume .image-container img {
+    width: 100%;
+  }
+}
